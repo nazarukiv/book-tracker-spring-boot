@@ -1,12 +1,12 @@
 package com.nazarukiv.booktracker;
 
-public class BookDto {
+public class CreateBookRequest {
     private String title;
     private String author;
     private int year;
     private BookStatus bookStatus;
 
-    public BookDto(String title, String author, int year, BookStatus bookStatus){
+    public CreateBookRequest(String title, String author, int year, BookStatus bookStatus){
         this.title = title;
         this.author = author;
         this.year = year;
@@ -29,5 +29,4 @@ public class BookDto {
     public BookStatus getBookStatus() {
         return bookStatus;
     }
-
 }
